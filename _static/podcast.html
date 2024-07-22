@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body data-barba="wrapper">
+    <div
+      class="fixed top-0 left-0 z-50 w-full h-screen scale-y-0 bg-dark"
+      id="page-transition"
+    ></div>
+    <header class="">
+      <div class="container">
+        <div
+          class="relative flex items-center justify-between pt-8 pb-2 border-b border-dark"
+        >
+          <a href="index.html" class="uppercase font-generalSemiBold">
+            fyrre magazine</a
+          >
+
+          <div
+            class="absolute right-0 z-50 cursor-pointer main-menu-toggle top-13"
+            id="main-menu-toggle"
+          >
+            <span class="block w-[40px] h-[2px] bg-dark"></span>
+            <span class="block w-[40px] h-[2px] bg-dark"></span>
+          </div>
+
+          <nav
+            class="fixed top-0 left-0 z-30 w-full h-screen bg-light main-overlay"
+            id="main-overlay"
+          >
+            <a
+              href="index.html"
+              class="absolute uppercase top-8 left-4 font-generalSemiBold"
+              nav-linkitem
+              id="menu-logo"
+            >
+              fyrre magazine</a
+            >
+
+            <ul
+              class="absolute space-y-10 lg:space-y-20 text-right top-[8rem] right-5 lg:right-10"
+              id="menu-nav"
+            >
+              <li>
+                <a
+                  class="font-generalSemiBold nav-linkitem uppercase text-[clamp(2rem,_10vw,_8rem)]"
+                  href="articles.html"
+                  >Articles</a
+                >
+              </li>
+              <li>
+                <a
+                  class="font-generalSemiBold nav-linkitem uppercase text-[clamp(2rem,_10vw,_8rem)]"
+                  href="podcast.html"
+                  >Podcasts</a
+                >
+              </li>
+              <li>
+                <a
+                  class="font-generalSemiBold nav-linkitem uppercase text-[clamp(2rem,_10vw,_8rem)]"
+                  href="authors.html"
+                  >Authors</a
+                >
+              </li>
+              <li>
+                <a
+                  class="font-generalSemiBold nav-linkitem uppercase text-[clamp(2rem,_10vw,_8rem)]"
+                  href="authors.html"
+                  >About</a
+                >
+              </li>
+
+              <li>
+                <a
+                  class="font-generalSemiBold nav-linkitem uppercase text-[clamp(2rem,_10vw,_8rem)]"
+                  href="authors.html"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+
+            <div
+              class="absolute bottom-14 lg:bottom-10 right-5 lg:left-10 max-w-[300px]"
+              id="menu-excerpt"
+            >
+              <p class="text-sm text-right lg:text-left">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Delectus dignissimos quos sapiente laborum architecto quibusdam
+                nobis alias consequuntur pariatur distinctio!
+              </p>
+            </div>
+
+            <ul
+              id="menu-icons"
+              class="absolute space-y-5 transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-8"
+            >
+              <li>
+                <a href="#">
+                  <svg class="size-6" role="image">
+                    <use xlink:href="./img/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <svg class="size-6" role="image">
+                    <use xlink:href="./img/sprite.svg#icon-youtube"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <svg class="size-6" role="image">
+                    <use xlink:href="./img/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+
+            <ul
+              class="absolute flex gap-5 right-5 lg:right-10 bottom-10"
+              id="menu-links"
+            >
+              <li><a href="#">Terms and Condition</a></li>
+              <li><a href="#">Privacy</a></li>
+              <li><a href="#">Help</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main data-barba="container" data-barba-namespace="podcast">
+      <section class="mb-10">
+        <div class="container">
+          <div class="title-wrapper pt-3 min-h-[90px] lg:min-h-[260px]">
+            <h1 class="">Podcast</h1>
+          </div>
+          <div class="space-y-10 md:mt-4 podcast-grid">
+            <div
+              class="podcast-griditem grid lg:grid-cols-[.5fr_1fr] gap-10 py-10 border-b border-dark last:border-none"
+            >
+              <div class="flex items-center gap-10">
+                <p class="hidden text-4xl font-generalSemiBold lg:block">01</p>
+
+                <div class="relative mb-5 w-[320px] mx-auto">
+                  <img
+                    src="./img/img-podcast-1.jpg"
+                    alt=""
+                    class="object-cover h-[320px] w-[320px]"
+                  />
+                  <h3
+                    class="absolute text-4xl text-white uppercase article-header top-3 left-3"
+                  >
+                    Fyrre <span class="block text-lg">podcast</span>
+                  </h3>
+                  <p
+                    class="absolute text-2xl text-white bottom-3 left-3 font-generalSemiBold"
+                  >
+                    EP 05
+                  </p>
+                  <div class="absolute right-3 bottom-3">
+                    <svg class="icon-lg" role="image">
+                      <use
+                        xlink:href="./img/sprite.svg#icon-podcast-arrow"
+                      ></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex flex-col items-center gap-5 lg:gap-5 lg:flex-row md:justify-center lg:justify-start"
+              >
+                <h3
+                  class="!mb-0 text-center article-header basis-1/3 lg:basis-1/2 md:text-left"
+                >
+                  The Problem of today’s cultural development
+                </h3>
+                <ul
+                  class="flex flex-col self-center gap-2 text-center md:self-center sm:flex-row md:gap-10 lg:gap-5 md:items-center"
+                >
+                  <li
+                    class="flex justify-center gap-3 whitespace-nowrap lg:justify-start"
+                  >
+                    <span class="font-generalSemiBold">Date:</span> 16, March
+                    2022
+                  </li>
+                  <li
+                    class="flex justify-center gap-3 whitespace-nowrap lg:justify-start"
+                  >
+                    <span class="font-generalSemiBold">Duration:</span> 16,
+                    March 2022
+                  </li>
+                  <li>
+                    <a href="#" class="link-arrow right"
+                      >Listen
+                      <svg class="icon-sm" role="image">
+                        <use
+                          xlink:href="./img/sprite.svg#icon-arrow-right"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div
+              class="podcast-griditem grid lg:grid-cols-[.5fr_1fr] gap-10 py-10 border-b border-dark last:border-none"
+            >
+              <div class="flex items-center gap-10">
+                <p class="hidden text-4xl font-generalSemiBold lg:block">01</p>
+
+                <div class="relative mb-5 w-[320px] mx-auto">
+                  <img
+                    src="./img/img-podcast-1.jpg"
+                    alt=""
+                    class="object-cover h-[320px] w-[320px]"
+                  />
+                  <h3
+                    class="absolute text-4xl text-white uppercase article-header top-3 left-3"
+                  >
+                    Fyrre <span class="block text-lg">podcast</span>
+                  </h3>
+                  <p
+                    class="absolute text-2xl text-white bottom-3 left-3 font-generalSemiBold"
+                  >
+                    EP 05
+                  </p>
+                  <div class="absolute right-3 bottom-3">
+                    <svg class="icon-lg" role="image">
+                      <use
+                        xlink:href="./img/sprite.svg#icon-podcast-arrow"
+                      ></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex flex-col items-center gap-5 lg:gap-5 lg:flex-row md:justify-center lg:justify-start"
+              >
+                <h3
+                  class="!mb-0 text-center article-header basis-1/3 lg:basis-1/2 md:text-left"
+                >
+                  The Problem of today’s cultural development
+                </h3>
+                <ul
+                  class="flex flex-col self-center gap-2 text-center md:self-center sm:flex-row md:gap-10 lg:gap-5 md:items-center"
+                >
+                  <li
+                    class="flex justify-center gap-3 whitespace-nowrap lg:justify-start"
+                  >
+                    <span class="font-generalSemiBold">Date:</span> 16, March
+                    2022
+                  </li>
+                  <li
+                    class="flex justify-center gap-3 whitespace-nowrap lg:justify-start"
+                  >
+                    <span class="font-generalSemiBold">Duration:</span> 16,
+                    March 2022
+                  </li>
+                  <li>
+                    <a href="#" class="link-arrow right"
+                      >Listen
+                      <svg class="icon-sm" role="image">
+                        <use
+                          xlink:href="./img/sprite.svg#icon-arrow-right"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div
+              class="podcast-griditem grid lg:grid-cols-[.5fr_1fr] gap-10 py-10 border-b border-dark last:border-none transition-all"
+            >
+              <div class="flex items-center gap-10">
+                <p class="hidden text-4xl font-generalSemiBold lg:block">01</p>
+
+                <div class="relative mb-5 w-[320px] mx-auto">
+                  <img
+                    src="./img/img-podcast-1.jpg"
+                    alt=""
+                    class="object-cover h-[320px] w-[320px]"
+                  />
+                  <h3
+                    class="absolute text-4xl text-white uppercase article-header top-3 left-3"
+                  >
+                    Fyrre <span class="block text-lg">podcast</span>
+                  </h3>
+                  <p
+                    class="absolute text-2xl text-white bottom-3 left-3 font-generalSemiBold"
+                  >
+                    EP 05
+                  </p>
+                  <div class="absolute right-3 bottom-3">
+                    <svg class="icon-lg" role="image">
+                      <use
+                        xlink:href="./img/sprite.svg#icon-podcast-arrow"
+                      ></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex flex-col items-center gap-5 lg:gap-5 lg:flex-row md:justify-center lg:justify-start"
+              >
+                <h3
+                  class="!mb-0 text-center article-header basis-1/3 lg:basis-1/2 md:text-left"
+                >
+                  The Problem of today’s cultural development
+                </h3>
+                <ul
+                  class="flex flex-col self-center gap-2 text-center md:self-center sm:flex-row md:gap-10 lg:gap-5 md:items-center"
+                >
+                  <li
+                    class="flex justify-center gap-3 whitespace-nowrap lg:justify-start"
+                  >
+                    <span class="font-generalSemiBold">Date:</span> 16, March
+                    2022
+                  </li>
+                  <li
+                    class="flex justify-center gap-3 whitespace-nowrap lg:justify-start"
+                  >
+                    <span class="font-generalSemiBold">Duration:</span> 16,
+                    March 2022
+                  </li>
+                  <li>
+                    <a href="#" class="link-arrow right"
+                      >Listen
+                      <svg class="icon-sm" role="image">
+                        <use
+                          xlink:href="./img/sprite.svg#icon-arrow-right"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="bg-dark text-light footer">
+        <div class="overflow-hidden">
+          <p class="flex gap-5 py-5 text-2xl whitespace-nowrap footer-marquee">
+            <span>Newletter+++</span><span>Newletter+++</span
+            ><span>Newletter+++</span><span>Newletter+++</span
+            ><span>Newletter+++</span><span>Newletter+++</span
+            ><span>Newletter+++</span><span>Newletter+++</span
+            ><span>Newletter+++</span><span>Newletter+++</span
+            ><span>Newletter+++</span><span>Newletter+++</span
+            ><span>Newletter+++</span><span>Newletter+++</span
+            ><span>Newletter+++</span><span>Newletter+++</span
+            ><span>Newletter+++</span><span>Newletter+++</span
+            ><span>Newletter+++</span><span>Newletter+++</span
+            ><span>Newletter+++</span><span>Newletter+++</span
+            ><span>Newletter+++</span><span>Newletter+++</span
+            ><span>Newletter+++</span><span>Newletter+++</span>
+          </p>
+        </div>
+        <div class="container">
+          <div class="grid items-center py-40 md:grid-cols-2">
+            <h2>Design News to your inbox</h2>
+            <form
+              action=""
+              class="mt-5 max-w-[460px] w-full flex flex-col md:flex-row items-center gap-2 justify-self-end"
+            >
+              <input
+                type="text"
+                placeholder="Email"
+                class="w-full px-2 py-2 text-xs border border-gray-100 placeholder:opacity-40 text-dark"
+              />
+              <button
+                class="w-full px-4 py-2 text-xs uppercase bg-light text-dark whitespace-nowrap md:w-auto"
+              >
+                Sign Up
+              </button>
+            </form>
+          </div>
+
+          <div
+            class="grid md:grid-cols-[1.3fr_1fr_1fr_1fr] mb-20 gap-5 footer-links"
+          >
+            <a href="#" class="uppercase logo font-generalSemiBold"
+              >Fyrre Magazine</a
+            >
+            <ul>
+              <li><a href="#">Art</a></li>
+              <li><a href="#">Design</a></li>
+              <li><a href="#">Architecture</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">Magazine</a></li>
+              <li><a href="#">Podcast</a></li>
+              <li><a href="#">Authors</a></li>
+            </ul>
+
+            <ul>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">X</a></li>
+              <li><a href="#">Instagram</a></li>
+            </ul>
+          </div>
+
+          <p class="p-2 mb-0 text-center copyright">
+            &copy; 2025 All Right Reserved
+          </p>
+        </div>
+      </footer>
+    </main>
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="./script/main-script.js"></script>
+  </body>
+</html>

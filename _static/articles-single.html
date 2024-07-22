@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body data-barba="wrapper">
+    <div
+      class="fixed top-0 left-0 z-50 w-full h-screen scale-y-0 bg-dark"
+      id="page-transition"
+    ></div>
+
+    <header class="">
+      <div class="container">
+        <div
+          class="relative flex items-center justify-between pt-8 pb-2 border-b border-dark"
+        >
+          <a href="index.html" class="uppercase font-generalSemiBold">
+            fyrre magazine</a
+          >
+
+          <div
+            class="absolute right-0 z-50 cursor-pointer main-menu-toggle top-13"
+            id="main-menu-toggle"
+          >
+            <span class="block w-[40px] h-[2px] bg-dark"></span>
+            <span class="block w-[40px] h-[2px] bg-dark"></span>
+          </div>
+
+          <nav
+            class="fixed top-0 left-0 z-30 w-full h-screen bg-light main-overlay"
+            id="main-overlay"
+          >
+            <a
+              href="index.html"
+              class="absolute uppercase top-8 left-4 font-generalSemiBold"
+              nav-linkitem
+              id="menu-logo"
+            >
+              fyrre magazine</a
+            >
+
+            <ul
+              class="absolute space-y-10 lg:space-y-20 text-right top-[8rem] right-5 lg:right-10"
+              id="menu-nav"
+            >
+              <li>
+                <a
+                  class="font-generalSemiBold nav-linkitem uppercase text-[clamp(2rem,_10vw,_8rem)]"
+                  href="articles.html"
+                  >Articles</a
+                >
+              </li>
+              <li>
+                <a
+                  class="font-generalSemiBold nav-linkitem uppercase text-[clamp(2rem,_10vw,_8rem)]"
+                  href="podcast.html"
+                  >Podcasts</a
+                >
+              </li>
+              <li>
+                <a
+                  class="font-generalSemiBold nav-linkitem uppercase text-[clamp(2rem,_10vw,_8rem)]"
+                  href="authors.html"
+                  >Authors</a
+                >
+              </li>
+              <li>
+                <a
+                  class="font-generalSemiBold nav-linkitem uppercase text-[clamp(2rem,_10vw,_8rem)]"
+                  href="authors.html"
+                  >About</a
+                >
+              </li>
+
+              <li>
+                <a
+                  class="font-generalSemiBold nav-linkitem uppercase text-[clamp(2rem,_10vw,_8rem)]"
+                  href="authors.html"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+
+            <div
+              class="absolute bottom-14 lg:bottom-10 right-5 lg:left-10 max-w-[300px]"
+              id="menu-excerpt"
+            >
+              <p class="text-sm text-right lg:text-left">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Delectus dignissimos quos sapiente laborum architecto quibusdam
+                nobis alias consequuntur pariatur distinctio!
+              </p>
+            </div>
+
+            <ul
+              id="menu-icons"
+              class="absolute space-y-5 transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-8"
+            >
+              <li>
+                <a href="#">
+                  <svg class="size-6" role="image">
+                    <use xlink:href="./img/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <svg class="size-6" role="image">
+                    <use xlink:href="./img/sprite.svg#icon-youtube"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <svg class="size-6" role="image">
+                    <use xlink:href="./img/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+
+            <ul
+              class="absolute flex gap-5 right-5 lg:right-10 bottom-10"
+              id="menu-links"
+            >
+              <li><a href="#">Terms and Condition</a></li>
+              <li><a href="#">Privacy</a></li>
+              <li><a href="#">Help</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main data-barba="container" data-barba-namespace="articles-single">
+    <section>
+      <div class="container">
+        <div class="flex items-center justify-between my-5" id="go-back">
+          <a
+            href="articles.html"
+            class="flex items-center gap-2 mb-5 uppercase hover:underline group md:mb-0 font-generalSemiBold"
+          >
+            <div
+              class="transition-all -translate-x-1 opacity-0 group-hover:opacity-100 group-hover:translate-x-0"
+            >
+              <svg class="icon-sm" role="image">
+                <use xlink:href="./img/sprite.svg#icon-arrow-left"></use>
+              </svg>
+            </div>
+
+            <span
+              class="transition-transform -translate-x-7 group-hover:translate-x-0"
+              >Go Back</span
+            >
+          </a>
+
+          <h4 id="single-title">Magazine</h4>
+        </div>
+
+        <div class="grid grid-cols-2 gap-10 my-20">
+          <h2 class="max-w-[470px]" id="single-main-title">Hope Dies Last</h2>
+          <p id="single-main-excerpt">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+            commodi vero nihil corporis aliquam, cupiditate omnis porro sit
+            velit quia architecto, repellat placeat ullam, maiores blanditiis
+            labore fugiat in temporibus eaque. Eveniet neque dolorem debitis
+            iusto, assumenda quisquam dignissimos blanditiis.
+          </p>
+        </div>
+
+        <div class="flex items-center justify-between mb-10 " id="single-article-details">
+          <div class="details">
+            <ul >
+              <li><span>Author:</span> Jakob Gronberg</li>
+              <li><span>Date:</span> 16, March 2022</li>
+              <li><span>Duration:</span> 1min</li>
+            </ul>
+          </div>
+          <a href="#" class="block category" id="single-article-category">Label</a>
+        </div>
+
+        <div class="banner" id="single-article-banner">
+          <img src="./img/feature.jpg" alt="" class="object-cover w-full" />
+        </div>
+      </div>
+    </section>
+
+    <article class="single-article">
+      <div class="single-wrapper max-w-[1000px] mx-auto w-full">
+        <div class="grid grid-cols-[300px_1fr] gap-20 my-20">
+          <aside class="sticky top-0 self-start">
+            <div class="flex gap-5 pb-5 mb-5 border-b border-dark">
+              <img
+                src="./img/author-1.jpg"
+                alt=""
+                class="rounded-full size-24"
+              />
+              <p class="text-3xl font-generalSemiBold">Jacob Gronberg</p>
+            </div>
+
+            <ul class="flex justify-between mb-2">
+              <li class="font-generalSemiBold">Date:</li>
+              <li>16, March 2002</li>
+            </ul>
+
+            <ul class="flex justify-between mb-2">
+              <li class="font-generalSemiBold">Read:</li>
+              <li>2mins</li>
+            </ul>
+          </aside>
+          <main id="main-article">
+            <h5>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste,
+              voluptates hic facere facilis corporis molestiae, deserunt modi
+              sapiente impedit possimus distinctio iusto odio voluptatum vel
+              praesentium laborum, minima quae. Dicta?
+            </h5>
+
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Dignissimos vitae aspernatur quam dicta placeat est eum excepturi
+              assumenda ad, sint officia, nemo culpa. Nihil delectus natus odio,
+              quo maxime architecto asperiores repellendus dolorum reiciendis
+              expedita dignissimos, non accusamus vitae sunt?
+            </p>
+
+            <figure>
+              <img src="./img/img-article-1.png" alt="" />
+              <figcaption>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa,
+                amet.
+              </figcaption>
+            </figure>
+
+            <ul>
+              <li>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Explicabo, mollitia.
+              </li>
+              <li>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam
+                quisquam quas, doloribus ratione adipisci eaque?
+              </li>
+              <li>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Eligendi nihil nisi dignissimos perferendis, totam corrupti
+                placeat accusamus eius ex vero!
+              </li>
+              <li>Lorem ipsum dolor sit amet.</li>
+              <li>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis,
+                nostrum ducimus eveniet ullam, distinctio inventore saepe error
+                ex quaerat asperiores dolorem maiores temporibus
+              </li>
+            </ul>
+
+            <ol>
+              <li>Lorem ipsum dolor sit amet.</li>
+              <li>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis,
+                hic?
+              </li>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+              <li>Lorem ipsum</li>
+            </ol>
+
+            <h2>header 2</h2>
+            <h3>header 3</h3>
+            <h4>header 4</h4>
+            <h5>header 5</h5>
+            <h6>header 6</h6>
+
+            <blockquote>
+              Lorem, ipsum dolor sit amet consectetur adipisicing?
+            </blockquote>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente
+              quas impedit ut voluptas aspernatur! Dolores veniam fugit
+              distinctio porro neque, optio consectetur deserunt. Ad, autem
+              incidunt. Ipsa nobis animi asperiores quos dolorum, officia, cum
+              ratione sed minus velit vero debitis!
+            </p>
+
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Veritatis, ex numquam, culpa rem hic dicta reprehenderit odio cum
+              cumque praesentium unde autem vitae, soluta harum ipsam vero quae
+              sed quam!
+            </p>
+          </main>
+        </div>
+      </div>
+    </article>
+
+    <section class="mb-20 latest">
+      <div class="container">
+        <div
+          class="flex items-center justify-between py-10 pb-20 border-t border-dark"
+        >
+          <h2 class="uppercase">Latest Post</h2>
+
+          <a href="#" class="link-arrow right"
+            >All Articles
+            <svg class="icon-sm" role="image">
+              <use xlink:href="./img/sprite.svg#icon-arrow-right"></use>
+            </svg>
+          </a>
+        </div>
+
+        <div class="grid overflow-hidden border md:grid-cols-3 border-dark lastest-grid">
+          <div class="p-10 grid-item">
+            <span class="after"></span>
+            <span class="before"></span>
+            <div class="flex items-center justify-between mb-10">
+              <p>16, March 2022</p>
+              <a href="#" class="category">Art</a>
+            </div>
+
+            <div class="mb-10 img-wrap">
+              <img
+                src="./img/img-article-1.png"
+                alt=""
+                class="object-cover w-full h-full"
+              />
+            </div>
+
+            <h3 class="article-header">Hope dies last</h3>
+            <p class="mb-10 line-clamp-4">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt
+              pariatur dolorum, itaque ut magni architecto labore delectus
+              reiciendis enim, odio tempora veritatis ipsa sint minus.
+              Repudiandae at, accusantium quidem harum odit officia ex rerum
+              saepe, voluptatibus perspiciatis magnam ipsum atque?
+            </p>
+            <div class="details">
+              <ul>
+                <li><span>Date:</span> 16, March 2022</li>
+                <li><span>Duration:</span> 1min</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="p-10 grid-item">
+            <span class="after"></span>
+            <span class="before"></span>
+            <div class="flex items-center justify-between mb-10">
+              <p>16, March 2022</p>
+              <a href="#" class="category">Art</a>
+            </div>
+
+            <div class="mb-10 img-wrap">
+              <img
+                src="./img/img-article-1.png"
+                alt=""
+                class="object-cover w-full h-full"
+              />
+            </div>
+
+            <h3 class="article-header">Hope dies last</h3>
+            <p class="mb-10 line-clamp-4">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt
+              pariatur dolorum, itaque ut magni architecto labore delectus
+              reiciendis enim, odio tempora veritatis ipsa sint minus.
+              Repudiandae at, accusantium quidem harum odit officia ex rerum
+              saepe, voluptatibus perspiciatis magnam ipsum atque?
+            </p>
+            <div class="details">
+              <ul>
+                <li><span>Date:</span> 16, March 2022</li>
+                <li><span>Duration:</span> 1min</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="p-10 grid-item">
+            <span class="after"></span>
+            <span class="before"></span>
+            <div class="flex items-center justify-between mb-10">
+              <p>16, March 2022</p>
+              <a href="#" class="category">Art</a>
+            </div>
+
+            <div class="mb-10 img-wrap">
+              <img
+                src="./img/img-article-1.png"
+                alt=""
+                class="object-cover w-full h-full"
+              />
+            </div>
+
+            <h3 class="article-header">Hope dies last</h3>
+            <p class="mb-10 line-clamp-4">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt
+              pariatur dolorum, itaque ut magni architecto labore delectus
+              reiciendis enim, odio tempora veritatis ipsa sint minus.
+              Repudiandae at, accusantium quidem harum odit officia ex rerum
+              saepe, voluptatibus perspiciatis magnam ipsum atque?
+            </p>
+            <div class="details">
+              <ul>
+                <li><span>Date:</span> 16, March 2022</li>
+                <li><span>Duration:</span> 1min</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-dark text-light">
+      <div class="overflow-hidden">
+        <p class="flex gap-5 py-5 text-2xl whitespace-nowrap">
+          <span>Newletter+++</span><span>Newletter+++</span
+          ><span>Newletter+++</span><span>Newletter+++</span
+          ><span>Newletter+++</span><span>Newletter+++</span
+          ><span>Newletter+++</span><span>Newletter+++</span
+          ><span>Newletter+++</span><span>Newletter+++</span
+          ><span>Newletter+++</span><span>Newletter+++</span
+          ><span>Newletter+++</span><span>Newletter+++</span
+          ><span>Newletter+++</span><span>Newletter+++</span
+          ><span>Newletter+++</span><span>Newletter+++</span
+          ><span>Newletter+++</span><span>Newletter+++</span
+          ><span>Newletter+++</span><span>Newletter+++</span
+          ><span>Newletter+++</span><span>Newletter+++</span
+          ><span>Newletter+++</span><span>Newletter+++</span>
+        </p>
+      </div>
+      <div class="container">
+        <div class="grid items-center py-40 md:grid-cols-2">
+          <h2>Design News to your inbox</h2>
+          <form
+            id="form"
+            action=""
+            class="mt-5 max-w-[460px] w-full flex flex-col md:flex-row items-center gap-2 justify-self-end"
+          >
+            <input
+              type="text"
+              placeholder="Email"
+              class="w-full px-2 py-2 text-xs border border-gray-100 placeholder:opacity-40 text-dark"
+            />
+            <button
+              class="w-full px-4 py-2 text-xs uppercase bg-light text-dark whitespace-nowrap md:w-auto"
+            >
+              Sign Up
+            </button>
+          </form>
+        </div>
+
+        <div
+          class="grid md:grid-cols-[1.3fr_1fr_1fr_1fr] mb-20 gap-5 footer-links"
+        >
+          <a href="#" class="uppercase font-generalSemiBold">Fyrre Magazine</a>
+          <ul>
+            <li><a href="#">Art</a></li>
+            <li><a href="#">Design</a></li>
+            <li><a href="#">Architecture</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">Magazine</a></li>
+            <li><a href="#">Podcast</a></li>
+            <li><a href="#">Authors</a></li>
+          </ul>
+
+          <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">X</a></li>
+            <li><a href="#">Instagram</a></li>
+          </ul>
+        </div>
+
+        <p class="p-2 mb-0 text-center">&copy; 2025 All Right Reserved</p>
+      </div>
+    </footer>
+  </main>
+  <script src="https://unpkg.com/@barba/core"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="./script/main-script.js"></script>
+
+  
+  </body>
+</html>

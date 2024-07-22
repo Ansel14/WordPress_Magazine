@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body data-barba="wrapper">
+    <div
+      class="fixed top-0 left-0 z-50 w-full h-screen scale-y-0 bg-dark"
+      id="page-transition"
+    ></div>
+    <header class="">
+      <div class="container">
+        <div
+          class="relative flex items-center justify-between pt-8 pb-2 border-b border-dark"
+        >
+          <a href="index.html" class="uppercase font-generalSemiBold">
+            fyrre magazine</a
+          >
+
+          <div
+            class="absolute right-0 z-50 cursor-pointer main-menu-toggle top-13"
+            id="main-menu-toggle"
+          >
+            <span class="block w-[40px] h-[2px] bg-dark"></span>
+            <span class="block w-[40px] h-[2px] bg-dark"></span>
+          </div>
+
+          <nav
+            class="fixed top-0 left-0 z-30 w-full h-screen bg-light main-overlay"
+            id="main-overlay"
+          >
+            <a
+              href="index.html"
+              class="absolute uppercase top-8 left-4 font-generalSemiBold"
+              nav-linkitem
+              id="menu-logo"
+            >
+              fyrre magazine</a
+            >
+
+            <ul
+              class="absolute space-y-10 lg:space-y-20 text-right top-[8rem] right-5 lg:right-10"
+              id="menu-nav"
+            >
+              <li>
+                <a
+                  class="font-generalSemiBold nav-linkitem uppercase text-[clamp(2rem,_10vw,_8rem)]"
+                  href="articles.html"
+                  >Articles</a
+                >
+              </li>
+              <li>
+                <a
+                  class="font-generalSemiBold nav-linkitem uppercase text-[clamp(2rem,_10vw,_8rem)]"
+                  href="podcast.html"
+                  >Podcasts</a
+                >
+              </li>
+              <li>
+                <a
+                  class="font-generalSemiBold nav-linkitem uppercase text-[clamp(2rem,_10vw,_8rem)]"
+                  href="authors.html"
+                  >Authors</a
+                >
+              </li>
+              <li>
+                <a
+                  class="font-generalSemiBold nav-linkitem uppercase text-[clamp(2rem,_10vw,_8rem)]"
+                  href="authors.html"
+                  >About</a
+                >
+              </li>
+
+              <li>
+                <a
+                  class="font-generalSemiBold nav-linkitem uppercase text-[clamp(2rem,_10vw,_8rem)]"
+                  href="authors.html"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+
+            <div
+              class="absolute bottom-14 lg:bottom-10 right-5 lg:left-10 max-w-[300px]"
+              id="menu-excerpt"
+            >
+              <p class="text-sm text-right lg:text-left">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Delectus dignissimos quos sapiente laborum architecto quibusdam
+                nobis alias consequuntur pariatur distinctio!
+              </p>
+            </div>
+
+            <ul
+              id="menu-icons"
+              class="absolute space-y-5 transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-8"
+            >
+              <li>
+                <a href="#">
+                  <svg class="size-6" role="image">
+                    <use xlink:href="./img/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <svg class="size-6" role="image">
+                    <use xlink:href="./img/sprite.svg#icon-youtube"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <svg class="size-6" role="image">
+                    <use xlink:href="./img/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+
+            <ul
+              class="absolute flex gap-5 right-5 lg:right-10 bottom-10"
+              id="menu-links"
+            >
+              <li><a href="#">Terms and Condition</a></li>
+              <li><a href="#">Privacy</a></li>
+              <li><a href="#">Help</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main data-barba="container" data-barba-namespace="home">
+      <section class="mb-10 hero">
+        <div class="container">
+          <div class="title-wrapper">
+            <h1 class="">art & life</h1>
+          </div>
+          <div
+            class="p-1 overflow-hidden md:pl-0 md:p-3 bg-dark text-light marquee-home"
+          >
+            <p
+              class="relative mb-0 uppercase font-generalSemiBold whitespace-nowrap"
+            >
+              <small class="absolute left-0 z-40 px-5 bg-dark"
+                >News Ticker ++</small
+              >
+              <span class="inline-block marquee">
+                <span class="inline-block ml-5 font-generalRegular">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit
+                  +++</span
+                >
+                <span class="inline-block ml-5 font-generalRegular">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit
+                  +++</span
+                >
+                <span class="inline-block ml-5 font-generalRegular">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit
+                  +++</span
+                >
+
+                <span class="inline-block ml-5 font-generalRegular">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit
+                  +++</span
+                >
+
+                <span class="inline-block ml-5 font-generalRegular">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit
+                  +++</span
+                >
+              </span>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-10 feature-story">
+        <div class="container">
+          <article class="grid gap-4 py-5 md:grid-cols-2">
+            <h2 class="uppercase" id="feature-header">Don't close your eyes</h2>
+            <div class="flex flex-col">
+              <p class="mb-5 grow" id="feature-content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+                nobis distinctio fuga minima dolore dolores vitae itaque
+                deserunt ab eius autem reiciendis placeat similique illum
+                repudiandae ea, fugiat quae! A quam qui velit magnam
+                voluptatibus eos molestias tempore, quidem libero nam fuga
+                dolorum delectus. Consequatur sint voluptatem possimus eius
+                quis.
+              </p>
+
+              <div class="details" id="feature-details">
+                <ul class="">
+                  <li><span>Author:</span> Jakob Gronberg</li>
+                  <li><span>Date:</span> 16, March 2022</li>
+                  <li><span>Duration:</span> 1min</li>
+                </ul>
+                <a href="#" class="category" id="feature-category">Label</a>
+              </div>
+            </div>
+          </article>
+          <div class="img-wrap">
+            <img
+              src="./img/feature.jpg"
+              alt=""
+              class="w-full"
+              id="feature-img"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="py-10 mb-10 articles">
+        <div class="container">
+          <div class="grid md:grid-cols-[1fr_300px] md:gap-20">
+            <div class="article-wrapper">
+              <div>
+                <article
+                  class="grid md:grid-cols-[240px_1fr] gap-12 pb-10 mb-10 border-b border-dark"
+                >
+                  <div class="img-wrap">
+                    <img
+                      src="./img/img-article-1.png"
+                      alt=""
+                      class="w-full h-[240px] object-cover"
+                    />
+                  </div>
+                  <div class="flex flex-col article-content">
+                    <div class="grow">
+                      <a href="articles-single.html" class="nav-linkitem">
+                        <h3 class="article-header">Hope dies last</h3>
+                      </a>
+                      <p class="mb-5">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Necessitatibus, enim perferendis ea et inventore quasi
+                        repudiandae sunt deleniti cum debitis porro doloremque
+                        cupiditate nostrum libero, distinctio aliquam reiciendis
+                        natus accusantium.xxxx
+                      </p>
+                    </div>
+
+                    <div class="details">
+                      <ul>
+                        <li><span>Author:</span> Jakob Gronberg</li>
+                        <li><span>Date:</span> 16, March 2022</li>
+                        <li><span>Duration:</span> 1min</li>
+                      </ul>
+                      <a href="#" class="category">Label</a>
+                    </div>
+                  </div>
+                </article>
+
+                <article
+                  class="grid md:grid-cols-[240px_1fr] gap-12 pb-10 mb-10 border-b border-dark"
+                >
+                  <div class="img-wrap">
+                    <img
+                      src="./img/img-article-1.png"
+                      alt=""
+                      class="w-full h-[240px] object-cover"
+                    />
+                  </div>
+                  <div class="flex flex-col article-content">
+                    <div class="grow">
+                      <h3 class="article-header">Hope dies last</h3>
+                      <p class="mb-5">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Necessitatibus, enim perferendis ea et inventore quasi
+                        repudiandae sunt deleniti cum debitis porro doloremque
+                        cupiditate nostrum libero, distinctio aliquam reiciendis
+                        natus accusantium.
+                      </p>
+                    </div>
+
+                    <div class="details">
+                      <ul>
+                        <li><span>Author:</span> Jakob Gronberg</li>
+                        <li><span>Date:</span> 16, March 2022</li>
+                        <li><span>Duration:</span> 1min</li>
+                      </ul>
+                      <a href="#" class="category">Label</a>
+                    </div>
+                  </div>
+                </article>
+
+                <article
+                  class="grid md:grid-cols-[240px_1fr] gap-12 pb-10 mb-10 border-b border-dark"
+                >
+                  <div class="img-wrap">
+                    <img
+                      src="./img/img-article-1.png"
+                      alt=""
+                      class="w-full h-[240px] object-cover"
+                    />
+                  </div>
+                  <div class="flex flex-col article-content">
+                    <div class="grow">
+                      <h3 class="article-header">Hope dies last</h3>
+                      <p class="mb-5">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Necessitatibus, enim perferendis ea et inventore quasi
+                        repudiandae sunt deleniti cum debitis porro doloremque
+                        cupiditate nostrum libero, distinctio aliquam reiciendis
+                        natus accusantium.
+                      </p>
+                    </div>
+
+                    <div class="details">
+                      <ul>
+                        <li><span>Author:</span> Jakob Gronberg</li>
+                        <li><span>Date:</span> 16, March 2022</li>
+                        <li><span>Duration:</span> 1min</li>
+                      </ul>
+                      <a href="#" class="category">Label</a>
+                    </div>
+                  </div>
+                </article>
+
+                <article
+                  class="grid md:grid-cols-[240px_1fr] gap-12 pb-10 mb-10 border-b border-dark"
+                >
+                  <div class="img-wrap">
+                    <img
+                      src="./img/img-article-1.png"
+                      alt=""
+                      class="w-full h-[240px] object-cover"
+                    />
+                  </div>
+                  <div class="flex flex-col article-content">
+                    <div class="grow">
+                      <h3 class="article-header">Hope dies last</h3>
+                      <p class="mb-5">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Necessitatibus, enim perferendis ea et inventore quasi
+                        repudiandae sunt deleniti cum debitis porro doloremque
+                        cupiditate nostrum libero, distinctio aliquam reiciendis
+                        natus accusantium.
+                      </p>
+                    </div>
+
+                    <div class="details">
+                      <ul>
+                        <li><span>Author:</span> Jakob Gronberg</li>
+                        <li><span>Date:</span> 16, March 2022</li>
+                        <li><span>Duration:</span> 1min</li>
+                      </ul>
+                      <a href="#" class="category">Label</a>
+                    </div>
+                  </div>
+                </article>
+
+                <article
+                  class="grid md:grid-cols-[240px_1fr] gap-12 pb-10 mb-10 border-b border-dark"
+                >
+                  <div class="img-wrap">
+                    <img
+                      src="./img/img-article-1.png"
+                      alt=""
+                      class="w-full h-[240px] object-cover"
+                    />
+                  </div>
+                  <div class="flex flex-col article-content">
+                    <div class="grow">
+                      <h3 class="article-header">Hope dies last</h3>
+                      <p class="mb-5">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Necessitatibus, enim perferendis ea et inventore quasi
+                        repudiandae sunt deleniti cum debitis porro doloremque
+                        cupiditate nostrum libero, distinctio aliquam reiciendis
+                        natus accusantium.
+                      </p>
+                    </div>
+
+                    <div class="details">
+                      <ul>
+                        <li><span>Author:</span> Jakob Gronberg</li>
+                        <li><span>Date:</span> 16, March 2022</li>
+                        <li><span>Duration:</span> 1min</li>
+                      </ul>
+                      <a href="#" class="category">Label</a>
+                    </div>
+                  </div>
+                </article>
+
+                <article
+                  class="grid md:grid-cols-[240px_1fr] gap-12 pb-10 mb-10 border-b border-dark"
+                >
+                  <div class="img-wrap">
+                    <img
+                      src="./img/img-article-1.png"
+                      alt=""
+                      class="w-full h-[240px] object-cover"
+                    />
+                  </div>
+                  <div class="flex flex-col article-content">
+                    <div class="grow">
+                      <h3 class="article-header">Hope dies last</h3>
+                      <p class="mb-5">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Necessitatibus, enim perferendis ea et inventore quasi
+                        repudiandae sunt deleniti cum debitis porro doloremque
+                        cupiditate nostrum libero, distinctio aliquam reiciendis
+                        natus accusantium.
+                      </p>
+                    </div>
+
+                    <div class="details">
+                      <ul>
+                        <li><span>Author:</span> Jakob Gronberg</li>
+                        <li><span>Date:</span> 16, March 2022</li>
+                        <li><span>Duration:</span> 1min</li>
+                      </ul>
+                      <a href="#" class="category">Label</a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <a href="#" class="link-arrow"
+                >All Articles
+                <svg class="icon-sm" role="image">
+                  <use xlink:href="./img/sprite.svg#icon-arrow-right"></use>
+                </svg>
+              </a>
+            </div>
+            <aside class="sticky top-0 self-start">
+              <h4 class="mb-5">Most Popular</h4>
+              <div class="popular-wrapper">
+                <div class="flex gap-5 pb-5 mb-5 border-b border-dark">
+                  <p class="text-lg font-generalSemiBold">01</p>
+                  <div>
+                    <h5 class="text-lg font-generalSemiBold">
+                      Street art festival
+                    </h5>
+                    <small
+                      ><span class="pr-3 font-generalMedium">Author:</span>
+                      Cristofer Vaccaro</small
+                    >
+                  </div>
+                </div>
+
+                <div class="flex gap-5 pb-5 mb-5 border-b border-dark">
+                  <p class="text-lg font-generalSemiBold">01</p>
+                  <div>
+                    <h5 class="text-lg font-generalSemiBold">
+                      Street art festival
+                    </h5>
+                    <small
+                      ><span class="pr-3 font-generalMedium">Author:</span>
+                      Cristofer Vaccaro</small
+                    >
+                  </div>
+                </div>
+
+                <div class="flex gap-5 pb-5 mb-5 border-b border-dark">
+                  <p class="text-lg font-generalSemiBold">01</p>
+                  <div>
+                    <h5 class="text-lg font-generalSemiBold">
+                      Street art festival
+                    </h5>
+                    <small
+                      ><span class="pr-3 font-generalMedium">Author:</span>
+                      Cristofer Vaccaro</small
+                    >
+                  </div>
+                </div>
+
+                <div class="flex gap-5 pb-5 mb-5 border-b border-dark">
+                  <p class="text-lg font-generalSemiBold">01</p>
+                  <div>
+                    <h5 class="text-lg font-generalSemiBold">
+                      Street art festival
+                    </h5>
+                    <small
+                      ><span class="pr-3 font-generalMedium">Author:</span>
+                      Cristofer Vaccaro</small
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="p-4 newsletter">
+                <h5 class="uppercase font-generalSemiBold">newsletter</h5>
+                <h4>Design News to your inbox</h4>
+                <form action="" class="mt-5">
+                  <input
+                    type="text"
+                    placeholder="Email"
+                    class="mb-3 text-red-300 border border-gray-100"
+                  />
+                  <button
+                    class="px-4 py-2 text-xs uppercase text-light bg-dark"
+                  >
+                    Sign Up
+                  </button>
+                </form>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-40 podcast">
+        <div class="container">
+          <div
+            class="flex items-center justify-between py-10 pb-20 border-t border-dark"
+          >
+            <h2 class="uppercase">Podcast</h2>
+            <a href="#" class="link-arrow right" id="podcast-link"
+              >All Episodes
+              <svg class="icon-sm" role="image">
+                <use xlink:href="./img/sprite.svg#icon-arrow-right"></use>
+              </svg>
+            </a>
+          </div>
+
+          <div
+            class="grid overflow-hidden border lg:grid-cols-3 border-dark podcast-grid"
+          >
+            <div class="p-5 md:p-10 grid-item">
+              <span class="after"></span>
+              <span class="before"></span>
+              <div class="relative mb-5">
+                <img
+                  src="./img/img-podcast-1.jpg"
+                  alt=""
+                  class="object-cover w-full h-full"
+                />
+                <h3 class="absolute text-4xl text-white uppercase top-5 left-5">
+                  Fyrre <span class="block text-lg">podcast</span>
+                </h3>
+                <p
+                  class="absolute bottom-0 text-2xl text-white left-5 font-generalSemiBold"
+                >
+                  EP 05
+                </p>
+                <a href="#" class="absolute right-5 bottom-5">
+                  <svg class="icon-lg" role="image">
+                    <use xlink:href="./img/sprite.svg#icon-podcast-arrow"></use>
+                  </svg>
+                </a>
+              </div>
+
+              <h3 class="article-header">
+                The Problem of today’s cultural developmentxxxx
+              </h3>
+
+              <div class="items-center justify-between md:flex">
+                <ul class="items-center gap-8 mb-5 md:mb-0 md:flex">
+                  <li>
+                    <span class="font-generalSemiBold">Date:</span> 16, March
+                    2022
+                  </li>
+                  <li>
+                    <span class="font-generalSemiBold">Duration:</span> 1min
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="p-5 md:p-10 grid-item">
+              <span class="after"></span>
+              <span class="before"></span>
+              <div class="relative mb-5">
+                <img
+                  src="./img/img-podcast-1.jpg"
+                  alt=""
+                  class="object-cover w-full h-full"
+                />
+                <h3 class="absolute text-4xl text-white uppercase top-5 left-5">
+                  Fyrre <span class="block text-lg">podcast</span>
+                </h3>
+                <p
+                  class="absolute bottom-0 text-2xl text-white left-5 font-generalSemiBold"
+                >
+                  EP 05
+                </p>
+                <a href="#" class="absolute right-5 bottom-5">
+                  <svg class="icon-lg" role="image">
+                    <use xlink:href="./img/sprite.svg#icon-podcast-arrow"></use>
+                  </svg>
+                </a>
+              </div>
+
+              <h3 class="article-header">
+                The Problem of today’s cultural developmentxxxx
+              </h3>
+
+              <div class="items-center justify-between md:flex">
+                <ul class="items-center gap-8 mb-5 md:mb-0 md:flex">
+                  <li>
+                    <span class="font-generalSemiBold">Date:</span> 16, March
+                    2022
+                  </li>
+                  <li>
+                    <span class="font-generalSemiBold">Duration:</span> 1min
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="p-5 md:p-10 grid-item">
+              <span class="after"></span>
+              <span class="before"></span>
+              <div class="relative mb-5">
+                <img
+                  src="./img/img-podcast-1.jpg"
+                  alt=""
+                  class="object-cover w-full h-full"
+                />
+                <h3 class="absolute text-4xl text-white uppercase top-5 left-5">
+                  Fyrre <span class="block text-lg">podcast</span>
+                </h3>
+                <p
+                  class="absolute bottom-0 text-2xl text-white left-5 font-generalSemiBold"
+                >
+                  EP 05
+                </p>
+                <a href="#" class="absolute right-5 bottom-5">
+                  <svg class="icon-lg" role="image">
+                    <use xlink:href="./img/sprite.svg#icon-podcast-arrow"></use>
+                  </svg>
+                </a>
+              </div>
+
+              <h3 class="article-header">
+                The Problem of today’s cultural developmentxxxx
+              </h3>
+
+              <div class="items-center justify-between md:flex">
+                <ul class="items-center gap-8 mb-5 md:mb-0 md:flex">
+                  <li>
+                    <span class="font-generalSemiBold">Date:</span> 16, March
+                    2022
+                  </li>
+                  <li>
+                    <span class="font-generalSemiBold">Duration:</span> 1min
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-40 author">
+        <div class="container">
+          <div
+            class="flex items-center justify-between py-10 pb-20 border-t border-dark"
+          >
+            <h2 class="uppercase">Author</h2>
+            <a href="#" class="link-arrow right" id="author-link"
+              >All Authors
+              <svg class="icon-sm" role="image">
+                <use xlink:href="./img/sprite.svg#icon-arrow-right"></use>
+              </svg>
+            </a>
+          </div>
+
+          <div
+            class="grid overflow-hidden border md:grid-cols-2 border-dark author-grid"
+          >
+            <div
+              class="flex flex-col items-center gap-5 p-10 grid-item md:flex-row"
+            >
+              <span class="after"></span>
+              <span class="before"></span>
+              <div class="overflow-hidden rounded-full">
+                <img src="./img/author-1.jpg" alt="" />
+              </div>
+              <div>
+                <h3 class="article-header">Jakob Gronberg</h3>
+                <div class="items-center justify-between -mt-4 md:flex">
+                  <ul class="items-center gap-8 mb-5 md:mb-0 md:flex">
+                    <li>
+                      <span class="font-generalSemiBold">Job:</span> Artist
+                    </li>
+                    <li>
+                      <span class="font-generalSemiBold">City:</span> Berlin
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="flex flex-col items-center gap-5 p-10 grid-item md:flex-row"
+            >
+              <span class="after"></span>
+              <span class="before"></span>
+              <div class="overflow-hidden rounded-full">
+                <img src="./img/author-1.jpg" alt="" />
+              </div>
+              <div>
+                <h3 class="article-header">Jakob Gronberg</h3>
+                <div class="items-center justify-between -mt-4 md:flex">
+                  <ul class="items-center gap-8 mb-5 md:mb-0 md:flex">
+                    <li>
+                      <span class="font-generalSemiBold">Job:</span> Artist
+                    </li>
+                    <li>
+                      <span class="font-generalSemiBold">City:</span> Berlin
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="flex flex-col items-center gap-5 p-10 grid-item md:flex-row"
+            >
+              <span class="after"></span>
+              <span class="before"></span>
+              <div class="overflow-hidden rounded-full">
+                <img src="./img/author-1.jpg" alt="" />
+              </div>
+              <div>
+                <h3 class="article-header">Jakob Gronberg</h3>
+                <div class="items-center justify-between -mt-4 md:flex">
+                  <ul class="items-center gap-8 mb-5 md:mb-0 md:flex">
+                    <li>
+                      <span class="font-generalSemiBold">Job:</span> Artist
+                    </li>
+                    <li>
+                      <span class="font-generalSemiBold">City:</span> Berlin
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="flex flex-col items-center gap-5 p-10 grid-item md:flex-row"
+            >
+              <span class="after"></span>
+              <span class="before"></span>
+              <div class="overflow-hidden rounded-full">
+                <img src="./img/author-1.jpg" alt="" />
+              </div>
+              <div>
+                <h3 class="article-header">Jakob Gronberg</h3>
+                <div class="items-center justify-between -mt-4 md:flex">
+                  <ul class="items-center gap-8 mb-5 md:mb-0 md:flex">
+                    <li>
+                      <span class="font-generalSemiBold">Job:</span> Artist
+                    </li>
+                    <li>
+                      <span class="font-generalSemiBold">City:</span> Berlin
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="bg-dark text-light footer">
+        <div class="overflow-hidden">
+          <p
+            class="flex gap-5 py-5 text-2xl whitespace-nowrap footer-marquee marquee"
+          >
+            <span>Newletter+++</span><span>Newletter+++</span
+            ><span>Newletter+++</span><span>Newletter+++</span
+            ><span>Newletter+++</span><span>Newletter+++</span
+            ><span>Newletter+++</span><span>Newletter+++</span
+            ><span>Newletter+++</span><span>Newletter+++</span
+            ><span>Newletter+++</span><span>Newletter+++</span
+            ><span>Newletter+++</span><span>Newletter+++</span
+            ><span>Newletter+++</span><span>Newletter+++</span
+            ><span>Newletter+++</span><span>Newletter+++</span
+            ><span>Newletter+++</span><span>Newletter+++</span
+            ><span>Newletter+++</span><span>Newletter+++</span
+            ><span>Newletter+++</span><span>Newletter+++</span
+            ><span>Newletter+++</span><span>Newletter+++</span>
+          </p>
+        </div>
+        <div class="container">
+          <div class="grid items-center py-40 md:grid-cols-2">
+            <h2 class="footer-header">Design News to your inbox</h2>
+            <form
+              id="form"
+              action=""
+              class="mt-5 max-w-[460px] w-full flex flex-col md:flex-row items-center gap-2 justify-self-end"
+            >
+              <input
+                type="text"
+                placeholder="Email"
+                class="w-full px-2 py-2 text-xs border border-gray-100 placeholder:opacity-40 text-dark"
+              />
+              <button
+                class="w-full px-4 py-2 text-xs uppercase bg-light text-dark whitespace-nowrap md:w-auto"
+              >
+                Sign Up
+              </button>
+            </form>
+          </div>
+
+          <div
+            class="grid md:grid-cols-[1.3fr_1fr_1fr_1fr] mb-20 gap-5 footer-links"
+          >
+            <a href="#" class="uppercase logo font-generalSemiBold"
+              >Fyrre Magazine</a
+            >
+            <ul>
+              <li><a href="#">Art</a></li>
+              <li><a href="#">Design</a></li>
+              <li><a href="#">Architecture</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">Magazine</a></li>
+              <li><a href="#">Podcast</a></li>
+              <li><a href="#">Authors</a></li>
+            </ul>
+
+            <ul>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">X</a></li>
+              <li><a href="#">Instagram</a></li>
+            </ul>
+          </div>
+
+          <p class="p-2 mb-0 text-center copyright">
+            &copy; 2025 All Right Reserved
+          </p>
+        </div>
+      </footer>
+    </main>
+
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="./script/main-script.js"></script>
+  </body>
+</html>
